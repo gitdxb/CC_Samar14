@@ -475,11 +475,9 @@ footer {
 }
 .footer__content {
     display: flex;
-    /* justify-content: center;
-    align-items: center;
-    height: 500px; */
     padding: 70px 0;
     position: relative;
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.281); */
 }
 .footer__newsletter {
     padding: 50px 60px;
@@ -534,14 +532,32 @@ footer {
     cursor: pointer;
     height: 100%;
 }
-.footer__copyright {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
-    border-top: 1px solid rgba(128, 128, 128, 0.281);
-}
+
 .footer__item {
     width: 25%;
+    
+}
+.footer__item div, .footer__item li {
+    padding: 0.5rem 0;
+}
+.footer__item i {
+    font-weight: 700;
+    margin-right: 10px;
+}
+.footer__icon i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    display: block;
+    border-radius: 50px;
+}
+.footer__icon {
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
 }
 .footer__item a {
     color: #636363;
@@ -549,8 +565,72 @@ footer {
     transition: all .5s;
     text-decoration: none;
 }
-
-
+.footer__item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    color: #fff;
+}
+.footer__item h3::before {
+    width: 15px;
+}
+.footer__item h3::after, .footer__item h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+}
+.footer__item h3::after {
+    width: 45px;
+    left: 20px;
+}
+.footer__item a {
+    color: #636363;
+    font-size: 16px;
+    transition: all .5s;
+}
+.footer__item a:hover {
+    color: #fff;
+}
+.footer__copyright {
+    background-color: #1f343b;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+}
+.footer__left {
+    margin-left: -67px;
+}
+.footer__left span {
+    color: #f55f8d;
+}
+.footer__right {
+    margin-right: -106px;
+}
+.footer__right a {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(255,255,255,.1);
+    transition: all .5s;
+}
+.footer__copyright a:hover {
+    background: #f55f8d;
+}
 
 
 /* KEYFRAME  */
