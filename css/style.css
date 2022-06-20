@@ -76,23 +76,33 @@ nav ul li {
     display: inline-block;
     padding: 55px 15px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #070120;
     font-size: 15px;
     font-weight: 500;
-    transition: all .5s;
+    transition: all .3s;
 }
-nav ul li a:hover {
-    color: #f55f8d;
-}
-nav ul li a:hover span {
-    animation: upToDown 0.3s;
-}
+
+
 nav {
     display: flex;
     align-items: center;
 }
+/* Hover effect */
+a span {
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+}
+nav ul li a:hover {
+    color: #f55f8d;
+}
+a:hover span {
+    animation: upToDown 0.2s;
+  }
+
 /* Carousel CSS */
 .carousel {
     background-image: url(../img/pic2.png);
@@ -177,6 +187,10 @@ nav {
 }
 .services__items img {
     width: 215px;
+}
+/* Hover effect */
+.services__items:hover {
+    transform: translateY(-20px);
 }
 /* About CSS */
 .about {
