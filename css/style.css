@@ -300,21 +300,15 @@ a:hover span {
 .features__left, .features__right {
     width: 50%;
 }
-/* Chinh lai kich thuoc khung */
-.features__content .features__left .features__group .features__items {
-    width: 599.5px;
-    height: 179.58px;
-}
-.features__content .features__left .features__group .features__items .features__bg {
-    width: 549.5px;
-    height: 149.58px;
-}
+
 .features__right img {
     width: 100%;
     margin-right: -80px;
 }
 .features__items {
     padding: 0 50px 30px 0;
+    width: 599px;
+    height: 180px;
 }
 .features__items div {
     padding-left: 25px;
@@ -330,6 +324,8 @@ a:hover span {
     align-items: center;
     position: relative;
     overflow: hidden;
+    width: 550px;
+    height: 150px;
 }
 .features__items i {
     font-size: 80px;
